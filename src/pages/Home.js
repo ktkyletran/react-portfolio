@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card, } from 'react-bootstrap'
+import { Container, Row, Col, Card, Jumbotron } from 'react-bootstrap'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { GrLocation } from 'react-icons/gr'
 import { BiPhone } from 'react-icons/bi'
@@ -9,10 +9,12 @@ import myResume from '../resume/kyles-resume.pdf'
 const Home = () => {
   return (
     <div>
+      <Jumbotron className="text-center">
+        <h1>About Me</h1>
+      </Jumbotron>
       <Container>
         <Row>
           <Col style={{backgroundColor: 'blue'}}>
-            <h1>About Me Section</h1>
             <img src="https://i.imgur.com/XQGK162m.jpg" alt="me" />
             <p>Full Stack Web Developer with a B.S. in Biology and passionate in expanding current knowledge and skill sets. Effective at creating well-designed, user-friendly applications by combining creativity and conflict resolution. Recognized by peers for attention to detail, reliability, and being collaborative.</p>
           </Col>
