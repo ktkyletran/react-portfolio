@@ -1,17 +1,18 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
+import './index.css'
 
 const ProjectCard = (props) => {
   return (
-    <div>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={props.src} />
+    <div id="card-div">
+        <Card id="card">
+          <Card.Img variant="top" src={props.src} id="card-img"/>
           <Card.Body>
-            <Card.Title>{props.title}</Card.Title>
-            <Card.Text>
+            <a href={props.deployedLink} target="_blank" rel="noreferrer"><Card.Title id="card-title">{props.title}</Card.Title></a>
+            <Card.Text id="card-text">
               {props.description}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <a href={props.githubLink} target="_blank" rel="noreferrer"><Button variant="outline-dark">GitHub</Button></a>
           </Card.Body>
         </Card>
     </div>
