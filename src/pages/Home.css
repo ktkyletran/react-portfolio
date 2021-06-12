@@ -54,4 +54,26 @@ p {
   color: darkblue;
 }
 
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+@keyframes fadeInRight { 
+	0% {opacity: 0; right: 10%} 
+	100% {opacity: 1; right: 0;}
+	}
+
+@keyframes fadeInLeft { 
+	0% {opacity: 0; left: 10%} 
+	100% {opacity: 1; left: 0;}
+	}
 

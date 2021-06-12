@@ -15,13 +15,13 @@ const Home = () => {
       </Jumbotron>
       <Container>
         <Row>
-          <Col className="about-container" sm={12} md={6}>
+          <Col className="about-container fadeInRight" sm={12} md={6}>
             <img src="https://imgur.com/XQGK162.jpg" alt="me" className="about-img"/>
           </Col>
-          <Col sm={12} md={6}>
+          <Col sm={12} md={6} className="fadeInLeft">
             <p className="about-desc">Full Stack Web Developer with a B.S. in Biology and passionate in expanding current knowledge and skill sets. Effective at creating well-designed, user-friendly applications by combining creativity and conflict resolution. Recognized by peers for attention to detail, reliability, and being collaborative.</p>
             <br></br>
-          <Container className="info-container">
+          <Container className="info-container ">
             <Row>
               <Col>
                 <h4 className="info-title">Info</h4>

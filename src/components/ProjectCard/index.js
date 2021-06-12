@@ -4,7 +4,7 @@ import './index.css'
 
 const ProjectCard = (props) => {
   return (
-    <div id="card-div">
+    <div id="fadeInBottom" className="fadeInBottom">
         <Card id="card">
           <Card.Img variant="top" src={props.src} id="card-img"/>
           <Card.Body>
@@ -12,8 +12,8 @@ const ProjectCard = (props) => {
             <Card.Text id="card-text">
               {props.description}
             </Card.Text>
-            <a href={props.githubLink} target="_blank" rel="noreferrer"><Button variant="outline-dark">GitHub</Button></a>
           </Card.Body>
+            <a href={props.githubLink} target="_blank" rel="noreferrer"><Button variant="outline-dark" id="github-btn">GitHub</Button></a>
         </Card>
     </div>
   )

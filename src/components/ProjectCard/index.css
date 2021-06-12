@@ -14,3 +14,21 @@
   height: 250px;
   border-radius: 10px;
 }
+
+#github-btn {
+  float: right;
+  margin: 7px 7px;
+  border-radius: 10px;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  transition: ease;
+}
+
+@keyframes fadeInBottom { 
+	0% {opacity: 0;} 
+	100% {opacity: 1;}
+	}
